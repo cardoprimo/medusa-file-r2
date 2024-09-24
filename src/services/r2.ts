@@ -1,8 +1,6 @@
-import fs from "fs";
+		import fs from "fs";
 import stream from "stream";
-import { getSignedUrl } from "@aws-sdk/s3-request-presigner";
-import { Upload } from "@aws-sdk/lib-storage";
-import { GetObjectCommand, S3 } from "@aws-sdk/client-s3";
+import S3 from "aws-sdk/clients/s3.js";
 import { FileService } from "medusa-interfaces";
 
 interface File {
